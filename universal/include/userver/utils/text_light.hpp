@@ -30,7 +30,7 @@ enum class SplitFlags {
 std::vector<std::string> Split(
     std::string_view str,
     std::string_view separators,
-    SplitFlags compress_adjacent_separators = SplitFlags::kCompressAdjacentSeparators
+    SplitFlags split_flags = SplitFlags::kCompressAdjacentSeparators
 );
 
 /// Split string by separators and return a non-owning container of chunks.
